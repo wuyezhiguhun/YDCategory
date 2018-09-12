@@ -9,5 +9,7 @@
 #ifndef YDCategory_h
 #define YDCategory_h
 
+#import "UIView+YDCategory.h"
+#import "UIViewController+YDCategory.h"
 
 #endif /* YDCategory_h */

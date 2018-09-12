@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/wuyezhiguhun/YDCategory.git', :tag => s.version, :submodules => true }
   s.requires_arc = true
   
-  s.public_header_files = 'YDCategory/YDCategory.h'
+  s.public_header_files = 'YDCategory/*.{h}'
   s.source_files = 'YDCategory/*.{h,m}'
   s.frameworks = 'UIKit', 'Foundation'
 

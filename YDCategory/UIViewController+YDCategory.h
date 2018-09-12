@@ -10,4 +10,20 @@
 
 @interface UIViewController (YDCategory)
 
+/**
+ * 两个按钮消息提示空间
+ * @pram title 标题
+ * @pram message 消息
+ * @pram accept 确定 按钮 名称
+ * @pram cancel 取消 按钮 名称
+ * @pram acceptHandler 确定 按钮 点击 back回调
+ * @pram cancelHandler 取消 按钮 点击 back回调
+ */
+- (void)messageAlertTitle:(NSString *)title
+                  message:(NSString *)message
+                   accept:(NSString *)accept
+                   cancel:(NSString *)cancel
+            acceptHandler:(void (^)(UIAlertAction *action))acceptHandler
+            cancelHandler:(void (^)(UIAlertAction *action))cancelHandler;
+
 @end
